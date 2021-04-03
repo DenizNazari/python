@@ -12,11 +12,14 @@ def telfonuyg():
         """)
 
 
-
-
-        gir=int(input("\n"))
-
-
+        while True:
+            try:
+                gir=int(input("\n"))
+            except:
+                print("rakam gir....\n")
+            continue
+            break
+        
 
 
 
@@ -55,7 +58,13 @@ def telfonuyg():
 
         if gir==2:
             kok=0
-            x=int(input(" silmek isdediginiz kisinin numarasini giriniz    "))
+            while True:
+                try:
+                    x=int(input(" silmek isdediginiz kisinin numarasini giriniz    "))
+                except:
+                    print("dogru yaz.....\n")
+                    continue
+                break
             if len(liste)!=0:
                 for q in liste:
                     kok+=1
@@ -114,10 +123,23 @@ def telfonuyg():
 
 
         if gir==4:
-            print("numarami ile  1 \n veya \n ad soyad  icin 2")  
-            x=int(input())
+            
+            while True:
+                try:
+                    print("numarami ile  1 \n veya \n ad soyad  icin 2")
+                    x=int(input())            
+                except:
+                    print("dogru yaz... \n  ")
+                    continue
+                break  
             if(x==1):
-                m=int(input("numarayi giriniz:   "))
+                while True:
+                    try:
+                        m=int(input("numarayi giriniz:   "))          
+                    except:
+                        print("dogru yaz... \n  ")
+                        continue
+                    break        
                 if len(liste)!=0:
                     lop=0
                     j=0
