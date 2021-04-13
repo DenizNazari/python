@@ -23,7 +23,7 @@ class Yolcu:
         self.Yolcu_Yaşı=Yolcu_Yaşı
         self.mil=0
     def Mil_Ekle(self,ödediği_tutarın):
-        self.mil+=self.mil+ödediği_tutarın*0.1
+        self.mil=self.mil+ödediği_tutarın*0.1
         return self.mil
     def Mil_Goster(self):
         print(self.mil)
